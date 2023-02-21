@@ -47,7 +47,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Click here to see a [Live demo](https://math-magicians-mk.netlify.app/)
+- Click here to see a [Live demo](https://calculator-mkar.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
