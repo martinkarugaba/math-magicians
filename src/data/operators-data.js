@@ -1,11 +1,13 @@
+import { RiDivideFill } from 'react-icons/ri';
+
 const operators = [
   {
     id: 0,
-    text: '&divide;',
+    text: <RiDivideFill />,
   },
   {
     id: 0,
-    text: '&times;',
+    text: 'x',
   },
   {
     id: 0,

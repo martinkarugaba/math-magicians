@@ -6,7 +6,7 @@ import Screen from './Screen';
 const Calculator = () => (
   <div className="border border-orange-500 w-[300px] h-[300px]">
     <Screen />
-    <div className="flex">
+    <div className="flex justify-between items-start">
       <Numbers />
       <Operators />
     </div>

@@ -5,47 +5,47 @@ const numbers = [
   },
   {
     id: 1,
-    text: 'AC',
+    text: '+/-',
   },
   {
     id: 2,
-    text: 'AC',
+    text: '%',
   },
   {
     id: 3,
-    text: 'AC',
+    text: '7',
   },
   {
     id: 4,
-    text: 'AC',
+    text: '8',
   },
   {
     id: 5,
-    text: 'AC',
+    text: '9',
   },
   {
     id: 6,
-    text: 'AC',
+    text: '4',
   },
   {
     id: 7,
-    text: 'AC',
+    text: '5',
   },
   {
     id: 8,
-    text: 'AC',
+    text: '6',
   },
   {
     id: 9,
-    text: 'AC',
+    text: '1',
   },
   {
     id: 10,
-    text: 'AC',
+    text: '2',
   },
   {
     id: 11,
-    text: 'AC',
+    text: '3',
   },
 ];
 
