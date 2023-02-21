@@ -1,4 +1,5 @@
 import React from 'react';
+import { BsDot } from 'react-icons/bs';
 import numbers from '../data/numbers-data';
 
 const Numbers = () => (
@@ -14,6 +15,14 @@ const Numbers = () => (
         </div>
       );
     })}
+    <div className="w-[100%] flex justify-between items-center text-xs">
+      <div className="basis-2/3 h-[45px] bg-slate-300 flex justify-center items-center cursor-pointer">
+        0
+      </div>
+      <div className="basis-1/3 h-[45px] bg-slate-300 flex justify-center items-center cursor-pointer">
+        <BsDot />
+      </div>
+    </div>
   </div>
 );
 

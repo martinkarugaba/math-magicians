@@ -4,7 +4,7 @@ import Operators from './Operators';
 import Screen from './Screen';
 
 const Calculator = () => (
-  <div className="border border-orange-500 w-[300px] h-[300px]">
+  <div className="border border-orange-500 w-[300px] h-auto">
     <Screen />
     <div className="flex justify-between items-start">
       <Numbers />

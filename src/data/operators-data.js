@@ -6,19 +6,19 @@ const operators = [
     text: <RiDivideFill />,
   },
   {
-    id: 0,
+    id: 1,
     text: 'x',
   },
   {
-    id: 0,
+    id: 2,
     text: '-',
   },
   {
-    id: 0,
+    id: 3,
     text: '+',
   },
   {
-    id: 0,
+    id: 4,
     text: '=',
   },
 ];
