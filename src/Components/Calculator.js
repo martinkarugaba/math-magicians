@@ -1,10 +1,15 @@
 import React from 'react';
+import Numbers from './Numbers';
+import Operators from './Operators';
 import Screen from './Screen';
 
 const Calculator = () => (
   <div className="border border-orange-500 w-[300px] h-[300px]">
     <Screen />
-    <p>here we go</p>
+    <div className="flex">
+      <Numbers />
+      <Operators />
+    </div>
   </div>
 );
 
