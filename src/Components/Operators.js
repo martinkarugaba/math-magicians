@@ -7,7 +7,7 @@ const Operators = () => (
       const { id, text } = item;
       return (
         <div
-          className="flex justify-center items-center bg-orange-400 border-b w-[100%] h-[45px] text-black text-xs cursor-pointer"
+          className="flex justify-center items-center bg-orange-400 border-t w-[100%] h-[60px] text-black text-xs cursor-pointer"
           key={id}
         >
           {text}
