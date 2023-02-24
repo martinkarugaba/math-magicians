@@ -1,20 +1,13 @@
 import React from 'react';
 import { BsDot } from 'react-icons/bs';
 import numbers from '../data/numbers-data';
+import SingleButton from './SingleButton';
 
-const Numbers = () => (
+const Buttons = () => (
   <div className="flex justify-start items-start flex-wrap w-[75%] h-auto">
     {numbers.map((item) => {
       const { id, text } = item;
-      return (
-        <button
-          type="button"
-          className="basis-1/3 flex justify-center items-center bg-slate-300 hover:bg-slate-400 text-black h-[60px] border-r border-t text-xs cursor-pointer"
-          key={id}
-        >
-          {text}
-        </button>
-      );
+      return <SingleButton key={id} digit={text} />;
     })}
     <div className="w-[100%] flex justify-start items-center text-xs">
       <button
@@ -33,4 +26,4 @@ const Numbers = () => (
   </div>
 );
 
-export default Numbers;
+export default Buttons;

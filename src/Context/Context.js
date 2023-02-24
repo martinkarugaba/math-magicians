@@ -3,22 +3,31 @@ import PropTypes from 'prop-types';
 import ACTIONS from './Actions';
 import reducer from './reducer';
 
-const GlobalContext = createContext();
-export const useGlobalContext = () => useContext(GlobalContext);
-
 const defaultState = {
-  numberOne: '',
-  numberTwo: '',
+  numberOne: 0,
+  numberTwo: 0,
   operator: '',
 };
+
+const GlobalContext = createContext();
+export const useGlobalContext = () => useContext(GlobalContext);
 
 const AppContext = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, defaultState);
 
-  dispatch({ type: ACTIONS.ADD_DIGIT, payload: { digit: 1 } });
+  const addDigit = (digit) => {
+    dispatch({ type: ACTIONS.ADD_DIGIT, payload: { digit } });
+  };
+
+  const chooseOperation = () => {
+    dispatch({
+      type: ACTIONS.CHOOSE_OPERATION,
+      payload: { digit: 1 },
+    });
+  };
 
   return (
-    <GlobalContext.Provider value={{ ...state }}>
+    <GlobalContext.Provider value={{ ...state, addDigit, chooseOperation }}>
       {children}
     </GlobalContext.Provider>
   );
