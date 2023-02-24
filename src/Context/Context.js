@@ -19,15 +19,17 @@ const AppContext = ({ children }) => {
     dispatch({ type: ACTIONS.ADD_DIGIT, payload: { digit } });
   };
 
-  const chooseOperation = () => {
+  const chooseOperation = (operation) => {
     dispatch({
       type: ACTIONS.CHOOSE_OPERATION,
-      payload: { digit: 1 },
+      payload: { operation },
     });
   };
 
   return (
-    <GlobalContext.Provider value={{ ...state, addDigit, chooseOperation }}>
+    <GlobalContext.Provider
+      value={{ ...state, addDigit, chooseOperation }}
+    >
       {children}
     </GlobalContext.Provider>
   );
