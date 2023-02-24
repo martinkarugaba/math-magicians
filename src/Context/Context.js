@@ -1,25 +1,24 @@
-import { useState, createContext, useContext } from 'react';
+import { createContext, useContext, useReducer } from 'react';
 import PropTypes from 'prop-types';
+import ACTIONS from './Actions';
+import reducer from './reducer';
 
 const GlobalContext = createContext();
 export const useGlobalContext = () => useContext(GlobalContext);
 
+const defaultState = {
+  numberOne: '',
+  numberTwo: '',
+  operator: '',
+};
+
 const AppContext = ({ children }) => {
-  const [numberOne, setNumberOne] = useState('');
-  const [numberTwo, setNumberTwo] = useState('');
-  const [operator, setOperator] = useState('');
+  const [state, dispatch] = useReducer(reducer, defaultState);
+
+  dispatch({ type: ACTIONS.ADD_DIGIT, payload: { digit: 1 } });
 
   return (
-    <GlobalContext.Provider
-      value={{
-        numberOne,
-        setNumberOne,
-        numberTwo,
-        setNumberTwo,
-        operator,
-        setOperator,
-      }}
-    >
+    <GlobalContext.Provider value={{ ...state }}>
       {children}
     </GlobalContext.Provider>
   );
