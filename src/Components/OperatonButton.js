@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types';
 import { useGlobalContext } from '../Context/Context';
 
-const OperationButton = ({ operation }) => {
+const OperationButton = ({ operation, basis, bg }) => {
   const { chooseOperation } = useGlobalContext();
   return (
     <button
       type="button"
-      className="flex justify-center items-center bg-orange-400 hover:bg-orange-500 border-t w-[100%] h-[60px] text-black text-xs cursor-pointer"
+      className={`basis-${basis} flex justify-center items-center bg-${bg} hover:bg-orange-500
+      } text-black h-[60px] border-r border-t text-xs cursor-pointer`}
       onClick={() => chooseOperation(operation)}
     >
       {operation}
@@ -18,4 +19,6 @@ export default OperationButton;
 
 OperationButton.propTypes = {
   operation: PropTypes.string.isRequired,
+  basis: PropTypes.string.isRequired,
+  bg: PropTypes.string.isRequired,
 };

@@ -1,17 +1,5 @@
 const numbers = [
   {
-    id: 0,
-    text: 'AC',
-  },
-  {
-    id: 1,
-    text: '+/-',
-  },
-  {
-    id: 2,
-    text: '%',
-  },
-  {
     id: 3,
     text: '7',
   },
