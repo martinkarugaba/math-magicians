@@ -4,8 +4,8 @@ import ACTIONS from './Actions';
 import reducer from './reducer';
 
 const defaultState = {
-  numberOne: 0,
-  numberTwo: 0,
+  numberOne: '',
+  numberTwo: '',
   operator: '',
 };
 

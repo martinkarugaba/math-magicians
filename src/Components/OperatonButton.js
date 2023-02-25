@@ -6,8 +6,7 @@ const OperationButton = ({ operation, basis, bg }) => {
   return (
     <button
       type="button"
-      className={`basis-${basis} flex justify-center items-center bg-${bg} hover:bg-orange-500
-      } text-black h-[60px] border-r border-t text-xs cursor-pointer`}
+      className={`basis-${basis} flex justify-center items-center bg-${bg} hover:bg-orange-500 text-black h-[60px] border-r border-t text-xs cursor-pointer`}
       onClick={() => chooseOperation(operation)}
     >
       {operation}

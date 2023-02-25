@@ -16,7 +16,7 @@ const Buttons = () => (
       return <SingleButton key={id} digit={text} basis="1/3" />;
     })}
     <div className="w-[100%] flex justify-start items-center text-xs">
-      <SingleButton digit={0} basis="1/3" />
+      <SingleButton digit="0" basis="1/3" />
       <SingleButton digit="." basis="2/3" />
     </div>
   </div>
