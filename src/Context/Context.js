@@ -26,9 +26,17 @@ const AppContext = ({ children }) => {
     });
   };
 
+  const allClear = () => {
+    dispatch({
+      type: ACTIONS.CLEAR,
+    });
+  };
+
   return (
     <GlobalContext.Provider
-      value={{ ...state, addDigit, chooseOperation }}
+      value={{
+        ...state, addDigit, chooseOperation, allClear,
+      }}
     >
       {children}
     </GlobalContext.Provider>

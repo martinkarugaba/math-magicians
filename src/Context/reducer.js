@@ -9,6 +9,9 @@ const reducer = (state, action) => {
         ...state,
         numberOne: `${state.numberOne || ''}${action.payload.digit}`,
       };
+
+    case ACTIONS.CLEAR:
+      return {};
     default:
       return state;
   }

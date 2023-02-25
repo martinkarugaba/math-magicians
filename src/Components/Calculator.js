@@ -1,11 +1,11 @@
 import React from 'react';
 import Buttons from './Buttons';
 import Operators from './Operators';
-import Screen from './Screen';
+import Display from './Display';
 
 const Calculator = () => (
   <div className="w-[400px] h-auto">
-    <Screen />
+    <Display />
     <div className="flex justify-between items-start">
       <Buttons />
       <Operators />
