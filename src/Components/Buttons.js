@@ -17,8 +17,16 @@ const Buttons = () => {
         >
           AC
         </button>
-        <OperationButton operation="+/-" basis="1/3" bg="slate-300" />
-        <OperationButton operation="%" basis="1/3" bg="slate-300" />
+        <OperationButton
+          operation="+/-"
+          basis="1/3"
+          bg="bg-slate-300"
+        />
+        <OperationButton
+          operation="%"
+          basis="1/3"
+          bg="bg-slate-300"
+        />
       </div>
       {numbers.map((item) => {
         const { id, text } = item;

@@ -6,7 +6,7 @@ const Operators = () => (
   <div className="flex flex-col justify-start w-[25%]">
     {operators.map((item) => {
       const { id, text } = item;
-      return <OperationButton key={id} operation={text} bg="orange-400" />;
+      return <OperationButton key={id} bg="bg-orange-400" operation={text} basis="full" />;
     })}
   </div>
 );

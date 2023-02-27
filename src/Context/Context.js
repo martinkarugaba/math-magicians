@@ -6,9 +6,8 @@ import reducer from './reducer';
 const defaultState = {
   numberOne: '',
   numberTwo: '',
-  operator: '',
+  operation: '',
 };
-
 const GlobalContext = createContext();
 export const useGlobalContext = () => useContext(GlobalContext);
 
@@ -24,6 +23,7 @@ const AppContext = ({ children }) => {
       type: ACTIONS.CHOOSE_OPERATION,
       payload: { operation },
     });
+    console.log(operation);
   };
 
   const allClear = () => {
