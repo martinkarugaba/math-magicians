@@ -4,9 +4,10 @@ import ACTIONS from './Actions';
 import reducer from './reducer';
 
 const defaultState = {
-  numberOne: '',
-  numberTwo: '',
-  operation: '',
+  numberOne: null,
+  numberTwo: null,
+  operation: null,
+  obj: { total: null, next: null, operation: null },
 };
 const GlobalContext = createContext();
 export const useGlobalContext = () => useContext(GlobalContext);
@@ -32,10 +33,18 @@ const AppContext = ({ children }) => {
     });
   };
 
+  const evaluate = () => {
+    dispatch({ type: ACTIONS.EVALUATE });
+  };
+
   return (
     <GlobalContext.Provider
       value={{
-        ...state, addDigit, chooseOperation, allClear,
+        ...state,
+        addDigit,
+        chooseOperation,
+        allClear,
+        evaluate,
       }}
     >
       {children}

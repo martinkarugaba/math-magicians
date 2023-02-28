@@ -1,6 +1,5 @@
 import React from 'react';
 import { useGlobalContext } from '../Context/Context';
-// import { BsDot } from 'react-icons/bs';
 import numbers from '../data/numbers-data';
 import OperationButton from './OperatonButton';
 import SingleButton from './SingleButton';
@@ -19,22 +18,22 @@ const Buttons = () => {
         </button>
         <OperationButton
           operation="+/-"
-          basis="1/3"
+          basis="basis-1/3"
           bg="bg-slate-300"
         />
         <OperationButton
           operation="%"
-          basis="1/3"
+          basis="basis-1/3"
           bg="bg-slate-300"
         />
       </div>
       {numbers.map((item) => {
         const { id, text } = item;
-        return <SingleButton key={id} digit={text} basis="1/3" />;
+        return <SingleButton key={id} digit={text} basis="basis-1/3" />;
       })}
       <div className="w-[100%] flex justify-start items-center text-xs">
-        <SingleButton digit="0" basis="1/3" />
-        <SingleButton digit="." basis="2/3" />
+        <SingleButton digit="0" basis="basis-1/3" />
+        <SingleButton digit="." basis="basis-2/3" />
       </div>
     </div>
   );

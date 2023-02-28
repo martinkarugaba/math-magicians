@@ -6,7 +6,7 @@ const DigitButton = ({ digit, basis }) => {
   return (
     <button
       type="button"
-      className={`basis-${basis} flex justify-center items-center bg-slate-300 hover:bg-slate-400 text-black h-[60px] border-r border-t text-xs cursor-pointer`}
+      className={`${basis} flex justify-center items-center bg-slate-300 hover:bg-slate-400 text-black h-[60px] border-r border-t text-xs cursor-pointer`}
       onClick={() => addDigit(digit)}
     >
       {digit}
