@@ -1,12 +1,19 @@
 import React from 'react';
 import operators from '../data/operators-data';
-import OperationButton from './OperatonButton';
+import SingleButton from './SingleButton';
 
 const Operators = () => (
-  <div className="flex flex-col justify-start w-[25%]">
+  <div className="flex flex-col justify-end w-[25%] h-[300px]">
     {operators.map((item) => {
       const { id, text } = item;
-      return <OperationButton key={id} bg="bg-orange-400" operation={text} basis="full" />;
+      return (
+        <SingleButton
+          key={id}
+          buttonName={text}
+          basis="basis-1/3"
+          bg="bg-orange-400"
+        />
+      );
     })}
   </div>
 );
