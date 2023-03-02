@@ -1,16 +1,15 @@
 import React from 'react';
-import Numbers from './Numbers';
+import Buttons from './Buttons';
 import Operators from './Operators';
-import Screen from './Screen';
+import Display from './Display';
 
 const Calculator = () => (
-  <div className="border w-[300px] h-auto">
-    <Screen />
+  <div className="w-[400px] h-auto">
+    <Display />
     <div className="flex justify-between items-start">
-      <Numbers />
+      <Buttons />
       <Operators />
     </div>
   </div>
 );
-
 export default Calculator;

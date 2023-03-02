@@ -1,9 +1,7 @@
-import { RiDivideFill } from 'react-icons/ri';
-
 const operators = [
   {
     id: 0,
-    text: <RiDivideFill />,
+    text: '÷',
   },
   {
     id: 1,
