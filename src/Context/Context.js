@@ -13,7 +13,6 @@ const AppContext = ({ children }) => {
 
   const handleClick = (buttonName) => {
     dispatch({ type: 'HANDLE_CLICK', payload: buttonName });
-    console.log(typeof buttonName);
   };
 
   return (
